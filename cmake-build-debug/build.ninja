@@ -88,6 +88,12 @@ build CMakeFiles/str.dir/tasks/string_.c.obj: C_COMPILER__str_Debug C$:/Users/le
   OBJECT_DIR = CMakeFiles\str.dir
   OBJECT_FILE_DIR = CMakeFiles\str.dir\tasks
 
+build CMakeFiles/str.dir/libs/data_structures/vector/vector.c.obj: C_COMPILER__str_Debug C$:/Users/lesny/CLionProjects/untitled6/libs/data_structures/vector/vector.c || cmake_object_order_depends_target_str
+  DEP_FILE = CMakeFiles\str.dir\libs\data_structures\vector\vector.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\str.dir
+  OBJECT_FILE_DIR = CMakeFiles\str.dir\libs\data_structures\vector
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target str
@@ -96,7 +102,7 @@ build CMakeFiles/str.dir/tasks/string_.c.obj: C_COMPILER__str_Debug C$:/Users/le
 #############################################
 # Link the static library libstr.a
 
-build libstr.a: C_STATIC_LIBRARY_LINKER__str_Debug CMakeFiles/str.dir/tasks/string_.c.obj
+build libstr.a: C_STATIC_LIBRARY_LINKER__str_Debug CMakeFiles/str.dir/tasks/string_.c.obj CMakeFiles/str.dir/libs/data_structures/vector/vector.c.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles\str.dir
   POST_BUILD = cd .

@@ -5,6 +5,7 @@ set(CMAKE_C_STANDARD 99)
 # указывается произвольная метка, в данном случае - project
 add_executable(untitled6 main.c)
 # создаём библиотеку
+
 add_library(str tasks/string_.h tasks/string_.c
         # string/tasks/digitToStartTransform.h
         # string/tasks/reverseWords.h
@@ -14,6 +15,6 @@ add_library(str tasks/string_.h tasks/string_.c
         # ...
         # string/tasks/hasPairOfWordsWithEqualLetterSet.h
         # string/tasks/printWordsNonEqualLastWord.h
-        )
+        libs/data_structures/vector/vector.c libs/data_structures/vector/vector.h)
 # описываем, что для запуска project потребуется сборка str
 target_link_libraries(untitled6 str)
